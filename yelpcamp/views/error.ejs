@@ -1,0 +1,12 @@
+<!-- Error Stack -->
+<% layout('layouts/boilerplates') %>
+    <div class="alert alert-danger" role="alert">
+        <h4 class="alert-heading">
+            <%= err.message %>
+        </h4>
+    </div>
+
+    <!-- use this lines to see the error stack -->
+     <!-- <% if (process.env.NODE_ENV !=="production" ) { %>
+        <%= err.stack %>
+        <% } %> -->

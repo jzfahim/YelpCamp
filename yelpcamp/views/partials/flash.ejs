@@ -1,0 +1,14 @@
+<!-- Flash functionalty. we will use it to flash message if client succesfull make Something such as campground or review  -->
+<% if(success && success.length) {%>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <%= success %>
+            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+        <!-- Flash functionalty. we will use it to flash message if clint fails to  make Something such as campground or review  -->
+        <% if(error && error.length) {%>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <%= error %>
+                    <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% } %>
